@@ -25,9 +25,13 @@ rabbit:
 ### Script
 
 ``` php
+<?php
 require_once 'vendor/autoload.php';
+use Symfony\Component\Yaml\Yaml;
+use Mkhairul\AMQPWrapper\AMQPWrapper;
+
 $config = Yaml::parse(file_get_contents('config.yaml'));
-$conn = new Mkhairul\AMQPWrapper($config, 'rabbit');
+$conn = new AMQPWrapper($config, 'rabbit');
 echo $conn->sendMessage('message-type', 'Time\'s Up!');
 ```
 

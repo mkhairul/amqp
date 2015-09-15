@@ -54,13 +54,13 @@ class AMQPWrapper
 		}
     }
 	
-	public setExchange($exchange)
+	public function setExchange($exchange)
 	{
 		$this->exchange = array_merge($this->exchange, $exchange);
 		return $this;
 	}
 	
-	public setQueue($queue)
+	public function setQueue($queue)
 	{
 		$this->queue = array_merge($this->queue, $queue);
 		return $this;
