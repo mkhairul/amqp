@@ -32,7 +32,7 @@ use Mkhairul\AMQPWrapper\AMQPWrapper;
 
 $config = Yaml::parse(file_get_contents('config.yaml'));
 $conn = new AMQPWrapper($config, 'rabbit');
-echo $conn->sendMessage('message-type', 'Time\'s Up!');
+$conn->sendMessage('message-type', 'Time\'s Up!');
 ```
 
 ## License
