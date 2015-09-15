@@ -12,14 +12,21 @@ $ composer require mkhairul/amqp dev-master
 
 ## Usage
 
+### YAML Config File (config.yaml)
+``` yaml
+rabbit:
+  host: localhost
+  port: 5672
+  login: guest
+  pass: guest
+  vhost: /
+```
+
+### Script
+
 ``` php
-$config['rabbit'] = [
-  'host' 	=> '...',
-  'port' 	=> '...',
-  'login' 	=> '...',
-  'pass'	=> '...',
-  'vhost'	=> '...'
-];
+require_once 'vendor/autoload.php';
+$config = Yaml::parse(file_get_contents('config.yaml'));
 $conn = new Mkhairul\AMQPWrapper($config, 'rabbit');
 echo $conn->sendMessage('message-type', 'Time\'s Up!');
 ```
