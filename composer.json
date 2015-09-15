@@ -2,8 +2,8 @@
     "name": "mkhairul/amqp",
     "description": "PhpAmqpLib wrapper",
     "keywords": [
-        "mkhairul",
-        "amqp"
+        "amqp",
+		"wrapper"
     ],
     "homepage": "https://github.com/mkhairul/amqp",
     "license": "MIT",
