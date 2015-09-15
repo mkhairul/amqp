@@ -1,13 +1,6 @@
 # amqp
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
-
-Its a PhpAmqpLib wrapper.
+Its a [PhpAmqpLib](https://github.com/videlalvaro/php-amqplib) wrapper.
 
 ## Install
 
