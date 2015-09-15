@@ -20,6 +20,10 @@ rabbit:
   login: guest
   pass: guest
   vhost: /
+  exchange:
+    name: someExchange
+  queue:
+	name: someQueue
 ```
 
 ### Script
