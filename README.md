@@ -7,7 +7,7 @@ Its a [PhpAmqpLib](https://github.com/videlalvaro/php-amqplib) wrapper.
 Via Composer
 
 ``` bash
-$ composer require mkhairul/amqp
+$ composer require mkhairul/amqp dev-master
 ```
 
 ## Usage
