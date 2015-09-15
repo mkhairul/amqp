@@ -93,11 +93,11 @@ class AMQPWrapper
 								$this->exchange['nowait'],
 								$this->exchange['arguments'],
 								$this->exchange['ticket']);
-		$ch->queue_bind($this->queue, $this->exchange);
+		$ch->queue_bind($this->queue['name'], $this->exchange['name']);
 		
 		$msg_body = json_encode(['type' => $type, 'data' => $message]);
 		$msg = new AMQPMessage($msg_body, array('content_type' => 'text/plain'));
-		$ch->basic_publish($msg, $exchange);
+		$ch->basic_publish($msg, $this->exchange['name']);
 		
 		$ch->close();
 		$this->conn->close();
