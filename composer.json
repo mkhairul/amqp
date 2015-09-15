@@ -1,0 +1,44 @@
+{
+    "name": "mkhairul/amqp",
+    "description": "PhpAmqpLib wrapper",
+    "keywords": [
+        "mkhairul",
+        "amqp"
+    ],
+    "homepage": "https://github.com/mkhairul/amqp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairul Anuar",
+            "email": "mkhairul@gmail.com",
+            "homepage": "http://mkhairul.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.*",
+		"videlalvaro/php-amqplib": "2.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mkhairul\\AMQPWrapper\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mkhairul\\AMQPWrapper\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
